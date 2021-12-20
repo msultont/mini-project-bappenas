@@ -6,7 +6,7 @@ appdirs==1.4.4
 argh==0.26.2
 argon2-cffi @ file:///tmp/build/80754af9/argon2-cffi_1613037499734/work
 arrow @ file:///tmp/build/80754af9/arrow_1617737686940/work
-asgiref @ file:///tmp/build/80754af9/asgiref_1602513567813/work
+asgiref==3.2.10
 asn1crypto @ file:///tmp/build/80754af9/asn1crypto_1596577642040/work
 astroid @ file:///tmp/build/80754af9/astroid_1628063140030/work
 astropy @ file:///tmp/build/80754af9/astropy_1638767383638/work
@@ -55,6 +55,7 @@ defusedxml @ file:///tmp/build/80754af9/defusedxml_1615228127516/work
 diff-match-patch @ file:///Users/ktietz/demo/mc3/conda-bld/diff-match-patch_1630511840874/work
 distributed @ file:///tmp/build/80754af9/distributed_1635956221111/work
 Django @ file:///tmp/build/80754af9/django_1601563330930/work
+django-crispy-forms==1.13.0
 docutils @ file:///tmp/build/80754af9/docutils_1620827980776/work
 entrypoints==0.3
 et-xmlfile==1.1.0
