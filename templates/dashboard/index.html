@@ -1,0 +1,48 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block content_wrapper %}
+	<div class="content-wrapper">
+		<!-- Content Header (Page header) -->
+		<div class="content-header">
+			<div class="container-fluid">
+				<div class="row mb-2">
+					<div class="col-sm-6">
+						<h1 class="m-0 text-dark">Survei Data Bappenas</h1>
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container-fluid -->
+		</div>
+		<!-- /.content-header -->
+
+		<!-- Main content -->
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<!-- general form elements disabled -->
+						<div class="card card-warning">
+							<div class="card-header">
+								<h3 class="card-title">Informasi Data Diri</h3>
+							</div>
+							<!-- /.card-header -->
+							<div class="card-body">{% include 'advanced_forms/general_elements_form.html' %}</div>
+							<!-- /.card-body -->
+						</div>
+						<!-- /.card -->
+					</div>
+					<div class="col-lg-6">
+						<canvas id="myChart" width="400"></canvas>
+					</div>
+				</div>
+			</div>
+			<!-- /.container-fluid -->
+		</div>
+		<!-- /.content -->
+	</div>
+
+{% endblock %}
+
+

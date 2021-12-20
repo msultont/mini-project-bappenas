@@ -1,0 +1,87 @@
+{% load crispy_forms_tags %}
+
+<form role="form" method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    {% comment %} <div class="row">
+        <div class="col-sm-12">
+            <!-- text input -->
+            <div class="form-group">
+                <label for="full_name">Nama Lengkap</label>
+                <input
+                    required
+                    id="full_name"
+                    name="full_name"
+                    type="text"
+                    class="form-control"
+                    placeholder="cth: Muhammad Syaifullah Abidin"
+                />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <!-- text input -->
+            <div class="form-group">
+                <label for="birth_place">Tempat Lahir</label>
+                <input
+                    required
+                    id="birth_place"
+                    name="birth_place"
+                    type="text"
+                    class="form-control"
+                    placeholder="cth: Jakarta"
+                />
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <!-- text input -->
+            <div class="form-group">
+                <label for="birth_date">Tanggal Lahir</label>
+                <input
+                    required
+                    id="birth_date"
+                    name="birth_date"
+                    type="date"
+                    class="form-control"
+                    placeholder=""
+                />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- text input -->
+            <div class="form-group">
+                <label for="place">Tempat Domisili</label>
+                <input
+                    required
+                    id="place"
+                    name="place"
+                    type="text"
+                    class="form-control"
+                    placeholder="cth: Bandung, Jakarta, dll"
+                />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- text input -->
+            <div class="form-group">
+                <label for="religion">Agama</label>
+                <select required id="religion" name="religion" class="form-control">
+                    <option>Islam</option>
+                    <option>Katholik</option>
+                    <option>Protestan</option>
+                    <option>Hindu</option>
+                    <option>Buddha</option>
+                </select>
+            </div>
+        </div>
+    </div> {% endcomment %}
+
+    <div class="card-footer">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
